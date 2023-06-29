@@ -43,7 +43,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: jenkins-labs/github-actions:latest
+        tags: cabradiaz/jenkins-labs:latest
 
           
           
