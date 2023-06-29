@@ -14,9 +14,11 @@ spec:
       labels:
         app: primuslearning
     spec:
+      imagePullSecrets:
+        - name: dockerhubsecret
       containers:
         - name: primuslearning
-          image: 473757648142.dkr.ecr.us-east-1.amazonaws.com/myecrrepo:1.1
+          image: cabradiaz/jenkins-labs:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
